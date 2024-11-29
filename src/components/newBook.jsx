@@ -16,7 +16,7 @@ export default function NewBook({ fetchBooks }) {
     - az adatot nem jeleníti meg a frontend automatikusan
     - a newbook is megkapja a fetchBooks függvényt */
 
-    fetch('/api/books/new', {
+    fetch('https://mern-backend-whty.onrender.com/api/books/new', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

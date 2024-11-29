@@ -12,7 +12,7 @@ export default function Book({ id, title, author, genre, createdAt, updatedAt, f
   - a fetch get metódus, ezért kell megadni a delete metódust
   kitörlődik az elem, de nem frissült a dom, mivel state-ben kell változást lefuttatni */
 
-  const handleDelete = () => fetch('/api/books/delete', {
+  const handleDelete = () => fetch('https://mern-backend-whty.onrender.com/api/books/delete', {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ export default function Book({ id, title, author, genre, createdAt, updatedAt, f
     - hqnel3dlick függvény
       - ha történt változás akkor handlesave metódust futtatjuk le */
 
-    fetch('/api/books/edit', {
+    fetch('https://mern-backend-whty.onrender.com/api/books/edit', {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'
