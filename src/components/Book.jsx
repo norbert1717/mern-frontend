@@ -1,4 +1,6 @@
-import { useState } from "react"
+import { useState } from "react";
+import '/Book.css';
+
 
 export default function Book({ id, title, author, genre, createdAt, updatedAt, fetchBooks }) {
   const [edit, setEdit] = useState(false);
