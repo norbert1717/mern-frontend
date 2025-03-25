@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '/newBook.css';
+import './newBook.css';
 
 export default function NewBook({ fetchBooks }) {
   const [title, setTitle] = useState("");

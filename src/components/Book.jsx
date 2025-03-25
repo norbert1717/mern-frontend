@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '/Book.css';
+import './Book.css';
 
 
 export default function Book({ id, title, author, genre, createdAt, updatedAt, fetchBooks }) {
